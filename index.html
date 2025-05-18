@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shiba Car Rental</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.jpg" class="logo" / class="car-image">
+    <h1>Shiba Car Rental</h1>
+  </header>
+  <div class="search-bar">
+    <div style="position: relative; display: inline-block; width: 300px;"><input type="text" id="search-box" placeholder="Search..." / style="width:100%;"><ul id="suggestions" style="position:absolute; top:100%; left:0; background:#fff; border:1px solid #ccc; max-height:150px; overflow-y:auto; width:100%; list-style:none; padding:0; margin:2px 0 0 0; z-index:1000; display:none;"></ul></div>
+    <select id="brand-select"><option value="">All Brands</option></select>
+    <select id="type-select"><option value="">All Types</option></select>
+    <button>Search</button>
+  </div>
+  <section id="car-grid" class="grid-container"></section>
+  <script src="js/main.js"></script>
+</body>
+</html>

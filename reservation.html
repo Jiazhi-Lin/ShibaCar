@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    
+    <h1>Complete Your Reservation</h1>
+  </header>
+
+  <main class="reservation-container">
+    <div class="car-info">
+      <img id="car-image" class="car-image" />
+      <div>
+        <h2 id="car-name"></h2>
+        <p id="car-year"></p>
+        <p id="car-fuel"></p>
+        <p id="car-price"></p>
+      </div>
+    </div>
+
+    
+<div class="car-info" style="text-align:center; margin-bottom: 20px;">
+  <img id="car-image" src="" alt="Car Image" class="car-image" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; margin-bottom: 10px;" />
+  <h2 id="car-name"></h2>
+  <p id="car-year"></p>
+  <p id="car-fuel"></p>
+  <p id="car-price"></p>
+</div>
+<form id="reservation-form">
+      <label>Name: <input type="text" name="Name" required /></label><br />
+      <label>Phone: <input type="tel" name="Phone" required /></label><br />
+      <label>Email: <input type="email" name="Email" required /></label><br />
+      <label>License #: <input type="text" name="License #" required /></label><br />
+      <label>Start Date: <input type="date" id="start-date" name="Start Date" required /></label><br />
+      <label>Rental Days: <input type="number" id="rental-days" name="Rental Days" value="1" min="1" required /></label><br />
+      <p>Total Price: $<span id="total-price">0.00</span></p>
+      <button type="submit">Submit</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+  </main>
+
+  <script src="js/reservation.js"></script>
+</body>
+</html>
